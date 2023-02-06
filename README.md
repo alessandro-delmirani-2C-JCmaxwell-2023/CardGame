@@ -1,2 +1,4 @@
 # CardGame
-Javascript Tutorial
+## Javascript Tutorial
+
+Alessandro Delmirani
