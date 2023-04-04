@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <head>
+           <meta charset="UTF-8">
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Document</title>
+           <style>
+            img{
+                width: 200px; height:250px;
+            }
+           </style>
+
+    </head>
+    <body>
+        <div id="gametable"></div>
+        <script>
+            let NcarteGirate = 0
+            let primaCartaGirata = null
+            let card= ["luffy-card-front.png","luffyg5-card-front.png","pokemon-card-front.png" , "luffy-card-front.png","luffyg5-card-front.png","pokemon-card-front.png" , "luffy-card-front.png","luffyg5-card-front.png","pokemon-card-front.png" , "luffy-card-front.png","luffyg5-card-front.png","pokemon-card-front.png"]
+            let table= document.querySelector('#gametable')
+
+            card.forEach(element => {
+                      table.innerHTML += '<img id="'+element +'"src="pokemon-card-back.png"onclick="TurnImg(this)"/>'
+                      console.log('<img id="'+element +'"src="pokemon-card-back.png" />')
+            });
+
+            function TurnImg(card) {
+                console.log("TunrnImg")
+                console.log(card.src)
+                if(card.src.includes("back"))
+                   card.src=card.id
+                else card.src = "pokemon-card-back.png";
+            }
+            function gira(carta) {
+               NcarteGirate++
+               carta.src = carta.id
+               console.log(carta.src)
+               if(NcarteGirate == 1)
+                   primaCartaGirata = carta
+                else {
+               
+                    if(carta.src == primaCartaGirata.src)
+                        console.log('bravo +1 punto')
+                        else {
+                        console.log('riprovaci')
+                        carta.src = "pokemon-card-back.png" 
+                        primaCartaGirata.src = "pokemon-card-back.png"
+                }   
+               //carta.src = "pokemon-card-back-png"
+            }
+        }
+       </script>
+    </body>
+</html>
