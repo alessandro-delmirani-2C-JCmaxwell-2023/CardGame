@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartePokemon</title>
+
+    <style>
+        Img {
+            width: 100px;
+        }
+        
+        body {
+            color: black;
+        }
+        
+        #tavolo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: aqua;
+        }
+        .card {
+            width: 100px;
+            margin: 5px;
+        }
+        .counter {
+            font-size: 24px;
+            margin: 10px;
+        }
+        #punti {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="punti">
+        <span class="counter">Punti =</span><span id="counter" class="counter">0</span>
+    </div>
+
+    <div id="tavolo"></div>
+
+    <script>
+        let NcarteGirate = 0;
+        let primaCartaGirata = null
+        let carte = ["luffy-card-front.png","luffyg5-card-front.png", "pokemon-card-front.png","luffy-card-front.png","luffyg5-card-front.png", "pokemon-card-front.png"]
+        let tavolo = document.querySelector('#tavolo')
+
+        let count = 0;
+
+        carte.forEach(element => {
+            tavolo.innerHTML += '<div class="card"><img id="'+element+'" src="pokemon-card-back.png" onclick="gira(this)" /></div>'
+        });
+
+        var counter = document.getElementById("counter");
+
+        function gira(carta) {
+            NcarteGirate++
+            carta.src = carta.id
+            if (NcarteGirate == 1)
+                primaCartaGirata = carta
+            else {
+                NcarteGirate = 0
+                if (carta.src == primaCartaGirata.src) {
+                    count++;
+                    counter.textContent = count;
+                } else {
+                    setTimeout(function() {
+                        carta.src = "pokemon-card-back.png";
+                        primaCartaGirata.src = "pokemon-card-back.png";
+                    }, 1000);
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>
