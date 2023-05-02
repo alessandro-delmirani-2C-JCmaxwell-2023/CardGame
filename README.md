@@ -1,13 +1,16 @@
 # CardGame
 ## Javascript Tutorial
-
-Alessandro Delmirani
+**ALESSANDRO DELMIRANI*
+                **GIOCO MOMERY*
+                             
 questo progetto è basato sul gioco di carte memory
 
 REGOLE:
--per fare punto in questo gioco bisogna girare la stessa coppia di carte 
-in caso contrario non si farà alcun punto.
--per far girare una carta basta cliccare sulla carta.
+-per vincere in questo gioco bisogna girare tutte le carte.
+-per fare punto bisogna cliccare sulle carte e girare a coppie uguali.
+-l'ordine delle carte è casuale.
+-se si sbaglia le carte girate torneranno nella posizione iniziale.
 
-![image](https://user-images.githubusercontent.com/124572412/235664866-68d4374a-af54-4e17-ac00-cb62e5d70e48.png)
+![image](https://user-images.githubusercontent.com/124572412/235670380-36d7c398-fd0f-4bae-8481-f345d3ba2c35.png)
 
+in questo gioco potresti sfidare i tuoi amici.
