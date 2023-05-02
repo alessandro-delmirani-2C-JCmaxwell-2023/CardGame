@@ -2,8 +2,8 @@
 ## Javascript Tutorial
 **ALESSANDRO DELMIRANI**
                 **GIOCO MOMERY**
-                                                    <sub>questo gioco è bello</sub>
-**questo progetto è basato sul gioco di carte memory
+                                                    
+**questo progetto è basato sul gioco di carte memory <sub>questo gioco è bello</sub>
 
 REGOLE:
 per vincere in questo gioco bisogna girare tutte le carte,per fare punto bisogna cliccare sulle carte e girare a coppie uguali.
