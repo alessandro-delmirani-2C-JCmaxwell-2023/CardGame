@@ -2,7 +2,7 @@
 ## Javascript Tutorial
 **ALESSANDRO DELMIRANI**
                 **GIOCO MOMERY**
-                             
+                                                    <sub>questo gioco è bello</sub>
 **questo progetto è basato sul gioco di carte memory
 
 REGOLE:
