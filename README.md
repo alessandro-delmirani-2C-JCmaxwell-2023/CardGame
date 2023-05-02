@@ -12,4 +12,4 @@ l'ordine delle carte è casuale, se si sbaglia le carte girate torneranno nella 
 ![image](https://user-images.githubusercontent.com/124572412/235670380-36d7c398-fd0f-4bae-8481-f345d3ba2c35.png)
 
 in questo gioco potresti sfidare i tuoi amici
-<sub>questo gioco è bello</sub>
+<sup>questo gioco è bello</sup>
