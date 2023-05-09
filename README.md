@@ -1,7 +1,7 @@
 # CardGame
 ## Javascript Tutorial
 **ALESSANDRO DELMIRANI**
-                **GIOCO MOMERY**
+                **GIOCO MEMORY**
                                                     
 **questo progetto è basato sul gioco di carte memory 
 
