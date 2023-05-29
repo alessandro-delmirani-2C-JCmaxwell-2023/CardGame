@@ -7,7 +7,8 @@
     <title>CartePokemon</title>
 
     <style>
-        Img {
+        
+        Img {  
             width: 100px;
         }
         
@@ -37,7 +38,6 @@
 </head>
 
 <body>
-
     <div id="punti">
         <span class="counter">Punti =</span><span id="counter" class="counter">0</span>
     </div>
@@ -45,6 +45,7 @@
     <div id="tavolo"></div>
 
     <script>
+
         let NcarteGirate = 0;
         let primaCartaGirata = null
         let carte = ["luffy-card-front.png","luffyg5-card-front.png", "pokemon-card-front.png","luffy-card-front.png","luffyg5-card-front.png", "pokemon-card-front.png"]
@@ -53,13 +54,16 @@
         let count = 0;
         
         carte.sort (() => Math.random() - 0.5);
-
+        //"card.sort" assegna un oridne casuale alle carte, per non far annoiare l'utente con la stessa disposizione di carte 
+        //"forEach" ci permette di fare una certa azione sulla nostra lista e in più ci permette di creare una funziojne che verrà eseguita per ogni elemento della lista   
         carte.forEach(element => {
             tavolo.innerHTML += '<div class="card"><img id="'+element+'" src="pokemon-card-back.png" onclick="gira(this)" /></div>'
         });
+            //"tabble.innerHTML" inserisce al tavolo l'elemento che vogliamo venga inserito , in questo caso "pokemon-card-back.png" , e introduce il caomando gira        });
 
         var counter = document.getElementById("counter");
 
+        //questa funzione ci permette di girare le carte all'interno del tavolo
         function gira(carta) {
             NcarteGirate++
             carta.src = carta.id
