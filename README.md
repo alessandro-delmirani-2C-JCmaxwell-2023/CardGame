@@ -17,4 +17,4 @@ quando fai punto:
 ![image](https://github.com/alessandro-delmirani-2C-JCmaxwell-2023/CardGame/assets/124572412/27a0ed0a-ca79-4028-98a2-97ffc145ae71)
 
 
-con questo link accederete al gioco: http://127.0.0.1:5500/card-gametutorial.html
+con questo link accederete al gioco: https://alessandro-delmirani-2c-jcmaxwell-2023.github.io/CardGame/
